@@ -12,7 +12,7 @@ function Model(props) {
     } = props
 
     const group = useRef();
-    const {nodes, materials} = useGLTF("/pac10.glb");
+    const {nodes, materials} = useGLTF("/virtual-stand/pac10.glb");
 
     useEffect(() => {
         setNodes(group.current.children);
@@ -165,6 +165,6 @@ function Model(props) {
     );
 }
 
-useGLTF.preload("/pac10.glb");
+useGLTF.preload("/virtual-stand/pac10.glb");
 
 export default Model;
