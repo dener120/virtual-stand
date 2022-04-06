@@ -34,8 +34,8 @@ function CardAlert(props) {
                 <Typography sx={{ mb: 1.5 }} variant="body2">
                     Документация:
                 </Typography>
-                <Link target="_blank" rel="noopener" href="documentations/bak/РЭ на стенд.pdf" underline="hover">
-                    РЭ на стенд
+                <Link target="_blank" rel="noopener" href={documentations[0]?.link} underline="hover">
+                    {documentations[0]?.title}
                 </Link>
             </CardContent>
         </Card>
