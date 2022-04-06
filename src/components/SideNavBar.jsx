@@ -5,7 +5,6 @@ import List from "@mui/material/List";
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import DrawerHeader from "./DrawerHeader";
-import {useEffect} from "react";
 
 const drawerWidth = 240;
 
@@ -47,7 +46,7 @@ function SideNavBar(props) {
             <Divider/>
             <List>
                 {[['Бак', 'bak'], ['Насос', 'opresovatNasos']].map(
-                    (text, index) => (
+                    (text) => (
                         <ListItem
                             button
                             key={text[0]}

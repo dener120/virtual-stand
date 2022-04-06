@@ -1,8 +1,5 @@
 import React, {useEffect, useRef} from "react";
-import {Outline} from '@react-three/postprocessing'
-import {BlendFunction, Resizer, KernelSize} from 'postprocessing'
 import {useGLTF} from "@react-three/drei";
-import {useFrame} from "@react-three/fiber";
 
 function Model(props) {
     const {

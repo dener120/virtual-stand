@@ -1,6 +1,6 @@
 import {lazy} from "react";
 import {Canvas} from "@react-three/fiber";
-import {Suspense, useRef} from "react";
+import {Suspense} from "react";
 import Loader from "./Loader";
 import {OrbitControls, Stage} from "@react-three/drei";
 
@@ -13,11 +13,9 @@ function CanvasModel(props) {
         showAlert = Function.prototype,
     } = props
 
-    const ref = useRef()
-
     return (
         <Canvas
-            dpr={[1, 2]}
+            // dpr={[1, 2]}
             camera={{
                 fov: 20,
             }}

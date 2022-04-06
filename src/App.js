@@ -2,12 +2,11 @@ import * as React from 'react';
 import {useTheme} from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import Alert from "./components/Alert/Alert";
 import Header from "./components/Header";
 import MainContent from "./components/Main";
 import SideNavBar from "./components/SideNavBar";
-import {useFrame} from "@react-three/fiber";
 
 
 function App() {
